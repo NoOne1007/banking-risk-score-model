@@ -1,0 +1,22 @@
+project:
+  name: banking-risk-score-model
+  random_state: 42
+
+data:
+  raw_path: data/raw/application_train.csv
+  target_column: TARGET
+
+split:
+  test_size: 0.2
+  stratify: true
+
+model:
+  type: logistic_regression
+  params:
+    C: 1.0
+    max_iter: 1000
+    solver: lbfgs
+
+mlflow:
+  experiment_name: credit_risk_logistic_regression
+  tracking_uri: ./mlruns
