@@ -1,13 +1,17 @@
-# Ignore raw data files
-data/raw/*
-!data/raw/.gitkeep
-
-# Ignore CSVs everywhere
-*.csv
-
-# Ignore notebook checkpoints
-.ipynb_checkpoints/
+# Virtual environment
+venv/
 
 # Python cache
 __pycache__/
 *.pyc
+
+# Data
+data/raw/
+data/processed/
+data/external/
+
+# MLflow
+mlruns/
+
+# Models
+models/
