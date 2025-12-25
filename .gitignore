@@ -15,3 +15,8 @@ mlruns/
 
 # Models
 models/
+
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
