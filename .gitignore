@@ -20,3 +20,7 @@ models/
 *.egg-info/
 build/
 dist/
+
+# requirements
+requirements-lock.txt
+
